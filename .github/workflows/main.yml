@@ -21,10 +21,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller
-        # 如果你的项目有其他依赖库，请在这里取消注释并添加：
-        # pip install -r requirements.txt
-        # 或者直接：pip install requests pandas (举例)
+        pip install pyinstaller PySide6  # 在这里顺便把 PySide6 装上
+        # 如果你的 RSS 应用还用到了其他库（比如 feedparser、requests），也请一起写在后面：
+        # pip install feedparser requests beautifulsoup4
+
 
     - name: Build with PyInstaller
       run: |
