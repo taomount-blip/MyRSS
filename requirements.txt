@@ -1,0 +1,28 @@
+# -- GUI Framework --
+PySide6>=6.8.0,<7.0.0     # Python 3.13 requires PySide6 >= 6.8.0
+PySide6_Addons>=6.8.0,<7.0.0  # QWebEngineView 等扩展模块
+
+# -- RSS Parsing --
+feedparser>=6.0.11,<7.0.0
+
+# -- HTTP Client --
+requests>=2.31.0,<3.0.0
+
+# -- Feedparser 性能增强 (C 加速 XML 解析) --
+lxml>=5.1.0,<6.0.0
+
+# -- 日期处理 (feedparser 依赖, 处理 RSS 中各种日期格式) --
+python-dateutil>=2.8.2,<3.0.0
+
+# -- 翻译 AI 客户端 --
+openai>=1.30.0              # 兼容 OpenAI/DeepSeek/通义千问等协议
+
+# -- HTML 处理 (清洗 RSS 文章中的 HTML) --
+beautifulsoup4>=4.12.0,<5.0.0
+
+# -- 开发与测试 --
+pytest>=8.0.0,<9.0.0
+pytest-qt>=4.4.0            # PySide6 GUI 测试支持
+
+# -- 打包发布 --
+PyInstaller>=6.0.0
